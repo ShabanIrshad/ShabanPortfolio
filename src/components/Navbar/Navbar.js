@@ -2,12 +2,18 @@ import {Link,Outlet} from 'react-router-dom';
 import navStyle from '../Navbar/Navbar.module.css';
 import { useState } from 'react';
 const Navbar=()=>{
+
     const [active,setActive]=useState('home');
     return (
         <>
             <div className={navStyle.nav}>
                 <div className={navStyle.leftNavDiv}>
-                    <h2>Shaban Irshad</h2>
+                    
+                    <div className={navStyle.design}>
+                       <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                    </div>
+                    <h2 className={navStyle.title}>Shaban Irshad</h2>
+                    
                    
                 </div>
                 <div className={navStyle.rightNavDiv}>
@@ -23,7 +29,7 @@ const Navbar=()=>{
                         <span></span>
                         <span></span>
                         <span></span>
-                    </div>
+                </div>
             </div>
             <Outlet/>
         </>

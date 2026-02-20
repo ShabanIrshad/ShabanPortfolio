@@ -1,107 +1,62 @@
 .nav{
-    background-color: #FF7F11;
-    width:100vw;
-    height: 10vh;
     display: flex;
-    color:#E2E8CE;
-    /* padding:0px 50px ; */
+    background-color: #7AAACE;
 }
 .leftNavDiv{
-    text-transform: uppercase;
-    width:30vw;
-    /* border:1px solid red; */
+    width:40%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .rightNavDiv{
-    /* background-color: bisque; */
-    width:70vw;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-     /* border:1px solid red; */
+    width:60%;
 }
 .rightNavDiv>ul{
-   display: flex;
-   /* border:1px solid green; */
-   justify-content: end;
-   padding-right:30px ;
+    display: flex;
+    float:right;
+    padding-right: 20px;
 }
 .rightNavDiv>ul>li{
-  margin:10px;
-  font-weight: 700;
-  font-size: 1.1em;
-  
-  list-style-type: none;
+   list-style-type: none;
+   padding: 10px;
 }
 .rightNavDiv>ul>li>a{
-  text-decoration: none;
-  color: white;
-  padding: 10px;
-  margin: 0px 10px;
+   text-decoration: none;
+   color:black;
+   font-weight: 600;
+}
+.rightNavDiv>ul>li>a:hover{
+   color:#355872;
+}
+.design{
+    width:60px;
+    height:60px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.design>div{
+    width:5px;
+    height:5px;
+    margin: 2px;
+    background-color: grey;
+    border-radius: 50%;
+}
+.title{
+    width: 60%;
+    text-align: left;
+    position: relative;
+    right:40px;
+    top:10px;
+    color: #355872;
 }
 .activeLink{
-    border-bottom:2px solid white;
-    box-shadow: 2px 2px 2px 2px #E2E8CE;
-    font-size: 20px;
+    border-bottom: 4px solid #355872;
+    border-radius: 3px;
 }
-.hamburger{
-    display: none;
-}
-@media screen and (max-width:1024px){
-    /* NORMAL DESKTOP VIEW */
-    .rightNavDiv>ul{
-        padding-right:10px ;
+@media screen and (max-width:770px){
+    body{
+        font-size:0.9rem;
     }
-    
-    .rightNavDiv>ul>li{
-        font-weight: 700;
-        font-size: 0.9em;
-    }
-    .rightNavDiv>ul>li>a{
-        padding: 10px;
-        margin: 0px;
-    }
-    .activeLink{
-    font-size: 17px;
-    }
-
-
-}
-@media screen and (max-width:768px){
-    /* TABLET VIEW */
-    
-    .rightNavDiv>ul>li{
-        font-weight: 700;
-        font-size: 0.7em;
-    }
-    .rightNavDiv>ul>li>a{
-        padding: 5px;
-        margin: 0px;
-    }
-    .activeLink{
-    font-size: 13px;
-    }
-
-
-
-}
-@media screen and (max-width:426px){
-    /* LARGE MOBILE VIEW */
-    .leftNavDiv{
-        width:70vw;
-        color:white;
-        text-align: center;
-        border:1px solid green;
-    }
-    .rightNavDiv{
-        display: none;
-    }
-    .hamburger{
-        display: block;
-        width:20vw;
-        height:20px;
-        border:1px solid black;
-    }
-
-
-
 }
