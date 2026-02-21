@@ -1,6 +1,8 @@
 .nav{
     display: flex;
-    background-color: #7AAACE;
+    background-color: #F2F2F2;
+    border-bottom: 5px solid #8758FF;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 .leftNavDiv{
     width:40%;
@@ -49,14 +51,18 @@
     position: relative;
     right:40px;
     top:10px;
-    color: #355872;
+    color: #181818;
+    text-transform: uppercase;
 }
 .activeLink{
-    border-bottom: 4px solid #355872;
+    border-bottom: 4px solid #8758FF;
     border-radius: 3px;
 }
 @media screen and (max-width:770px){
     body{
         font-size:0.9rem;
+    }
+    .title{
+        width:70%;
     }
 }

@@ -1,0 +1,112 @@
+.section{
+    display: flex;
+    width:90%;
+    margin:auto;
+    
+}
+.section>main{
+    width:93%;
+    height:80vh;
+    padding: 10px;
+    display: flex;
+}
+.section>aside{
+    width:7%;
+}
+.heroLeft{
+    width:60%;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+.heroRight{
+    width:40%;
+
+}
+.quote{
+    color:#8758FF;
+}
+.name{
+    margin-left: 20px;
+    font-size: 1.8em;
+}
+.heroLeft>div>button{
+    padding:10px;
+    margin:10px;
+    width:120px;
+    background-color: #181818;
+    color:#F2F2F2;
+    font-weight: 700;
+    font-size: 1.2rem;
+     border: none;
+    border-radius: 10px;
+}
+.heroLeft>div>button:hover{
+    background-color: #8758FF;
+    box-shadow: 2px 2px 5px #F2F2F2;
+   
+}
+.heroRight>img{
+    width:80%;
+    height:50%;
+    position: relative;
+    top:120px;
+}
+.section>aside>.text{
+   writing-mode: vertical-rl;
+  text-orientation: sideways;
+  position: relative;
+  top:30%;
+  left:10px;
+  letter-spacing: 2px;
+}
+@media screen and (max-width:770px){
+    .heroLeft{
+        font-size: 0.9rem;
+    }
+    .heroLeft>div>button{
+        width:100px;
+        font-size: 1rem;
+    }
+    .heroRight>img{
+        width:90%;
+        height:60%;
+        position: relative;
+        top:100px;
+    }
+    .section>aside>.text{
+        position: relative;
+        top:30%;
+        left:10px;
+        letter-spacing: 2px;
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width:1024px){
+    .heroRight>img{
+        width:90%;
+        height:60%;
+        position: relative;
+        top:100px;
+    }
+}
+@media screen and (max-width:426px){
+    .heroRight{
+        display: none;
+    }
+    .section>aside>.text{
+       display: none;
+    }
+    .heroLeft{
+        width: 100%;
+    }
+    .heroLeft>div>button{
+        width:80px;
+        font-size: 0.9rem;
+    }
+    .section>main{
+    width:100%;
+   
+    }
+
+
+}
