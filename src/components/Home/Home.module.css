@@ -59,6 +59,81 @@
   left:10px;
   letter-spacing: 2px;
 }
+.heroLeft>div>button>img{
+    color:white;
+    background-color: white;
+}
+/* ----------------------ABOUT SECTION DESIGN STARTS HERE-------------------- */
+.heading{
+    /* border:1px solid red; */
+    text-align: center;
+    /* width:10%; */
+}
+.horizontalLine{
+    border:5px solid  #8758FF;
+    border-radius: 10px;
+    width: 12%;
+    margin:-10px auto;
+}
+.container{
+    width:90%;
+    margin:auto;
+    height:80vh;
+    /* border:1px solid red; */
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 10px;
+}
+.leftContainer{
+    background-color: #F2F2F2;
+    margin:30px;
+    width:45%;
+    height:90%;
+    /* border:1px solid black; */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    border-radius: 15px;
+}
+.rightContainer{
+    margin:20px;
+     width:45%;
+    height:90%;
+    border:1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightContainer>div>img{
+   width:25vw;
+    height:25vw;
+    border:1px solid green;
+    border-radius: 50%;  
+    
+}
+.design{
+    position: relative;
+    right:50px;
+    width:120px;
+    height:90%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border: 1px solid black;
+}
+.design>div{
+    width:10px;
+    height:10px;
+    margin: 2px 5px;
+    background-color: #181818;
+    border-radius: 50%;
+}
+
+
+/* ----------------------ABOUT SECTION DESIGN ENDS HERE-------------------- */
 @media screen and (max-width:770px){
     .heroLeft{
         font-size: 0.9rem;
@@ -106,6 +181,10 @@
     .section>main{
     width:100%;
    
+    }
+    .section{
+        width:100%;
+        
     }
 
 
