@@ -51,6 +51,10 @@
     position: relative;
     top:120px;
 }
+.section>aside{
+  position: sticky;
+  top:0px;
+}
 .section>aside>.text{
    writing-mode: vertical-rl;
   text-orientation: sideways;
@@ -65,9 +69,7 @@
 }
 /* ----------------------ABOUT SECTION DESIGN STARTS HERE-------------------- */
 .heading{
-    /* border:1px solid red; */
     text-align: center;
-    /* width:10%; */
 }
 .horizontalLine{
     border:5px solid  #8758FF;
@@ -79,7 +81,6 @@
     width:90%;
     margin:auto;
     height:80vh;
-    /* border:1px solid red; */
     display: flex;
     align-items:center;
     justify-content: center;
@@ -90,7 +91,6 @@
     margin:30px;
     width:45%;
     height:90%;
-    /* border:1px solid black; */
     padding: 10px;
     display: flex;
     align-items: center;
@@ -101,7 +101,6 @@
     margin:20px;
      width:45%;
     height:90%;
-    border:1px solid green;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,43 +109,82 @@
 .rightContainer>div>img{
    width:25vw;
     height:25vw;
-    border:1px solid green;
     border-radius: 50%;  
     
 }
 .design{
     position: relative;
-    right:50px;
-    width:120px;
-    height:90%;
+    right:60px;
+    bottom:100px;
+    width:100px;
+    height:100px;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .design>div{
-    width:10px;
-    height:10px;
-    margin: 2px 5px;
+    width:5px;
+    height:5px;
+    margin: 2px;
     background-color: #181818;
     border-radius: 50%;
+}
+.point{
+    font-size: 1.2rem;
 }
 
 
 /* ----------------------ABOUT SECTION DESIGN ENDS HERE-------------------- */
+/* ---------------------SKILLS SECTION DESIGN STARTS HERE------------------------------ */
+.skills{
+    border:1px solid red;
+    
+}
+.skillQuote{
+    color:#8f8989;
+    width:60%;
+    margin:-30px auto;
+    border:1px solid green;
+    text-align: center;
+}
+/* ---------------------SKILLS SECTION DESIGN ENDS HERE------------------------------ */
+
+@media screen and (max-width:1024px){
+    .heroRight>img{
+        width:90%;
+        height:60%;
+        position: relative;
+        top:100px;
+    }
+    .design{
+        height:100px;
+        width:100px;
+    }
+    .rightContainer>div>img{
+        width:350px;
+        height:350px;
+        border-radius: 50%;  
+    
+    }
+}
+
 @media screen and (max-width:770px){
     .heroLeft{
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     .heroLeft>div>button{
-        width:100px;
-        font-size: 1rem;
+        width:80px;
+        font-size: 0.8rem;
     }
     .heroRight>img{
         width:90%;
         height:60%;
         position: relative;
         top:100px;
+    }
+    .point{
+        font-size: 0.9rem;
     }
     .section>aside>.text{
         position: relative;
@@ -155,15 +193,19 @@
         letter-spacing: 2px;
         font-size: 0.7rem;
     }
-}
-@media screen and (max-width:1024px){
-    .heroRight>img{
-        width:90%;
-        height:60%;
-        position: relative;
-        top:100px;
+    .leftContainer{
+        font-size: 0.8rem;
+    }
+    .rightContainer>div>img{
+        width:250px;
+        height:250px; 
+    }
+    .design{
+        height:80px;
+        width:80px;
     }
 }
+
 @media screen and (max-width:426px){
     .heroRight{
         display: none;
@@ -186,6 +228,31 @@
         width:100%;
         
     }
+    .section>main{
+        width:100%;
+        height:70vh;
+        padding: 0px;
+        display: flex;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .leftContainer{
+        width:90%;
+    }
+    .rightContainer{
+        width: 90%;
+    }
+    .horizontalLine{
+        border:5px solid  #8758FF;
+        border-radius: 10px;
+        width: 25%;
+        margin:50px auto;
+    }
+    .heading{
+        margin-bottom: -40px;
+    }
+    
 
 
 }

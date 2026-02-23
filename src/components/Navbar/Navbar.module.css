@@ -3,6 +3,9 @@
     background-color: #F2F2F2;
     border-bottom: 5px solid #8758FF;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top:0px;
+    z-index: 999;
 }
 .leftNavDiv{
     width:40%;
@@ -64,5 +67,13 @@
     }
     .title{
         width:70%;
+    }
+}
+@media screen and (max-width:426px){
+    .rightNavDiv{
+        display: none;
+    }
+    .leftNavDiv{
+        width:80%;
     }
 }
