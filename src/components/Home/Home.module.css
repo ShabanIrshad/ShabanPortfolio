@@ -1,258 +1,149 @@
-.section{
-    display: flex;
-    width:90%;
-    margin:auto;
-    
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: auto;
 }
-.section>main{
-    width:93%;
-    height:80vh;
-    padding: 10px;
-    display: flex;
-}
-.section>aside{
-    width:7%;
-}
-.heroLeft{
-    width:60%;
-    padding: 20px;
-    font-size: 1.5rem;
-}
-.heroRight{
-    width:40%;
 
+/* MAIN HERO */
+.section > main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 0;
+  align-items: center;
 }
-.quote{
-    color:#8758FF;
+
+.heroLeft,
+.heroRight {
+  width: 100%;
 }
-.name{
-    margin-left: 20px;
-    font-size: 1.8em;
+
+.heroLeft {
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
 }
-.heroLeft>div>button{
-    padding:10px;
-    margin:10px;
-    width:120px;
-    background-color: #181818;
-    color:#F2F2F2;
-    font-weight: 700;
-    font-size: 1.2rem;
-     border: none;
-    border-radius: 10px;
+
+.heroRight {
+  display: flex;
+  justify-content: center;
 }
-.heroLeft>div>button:hover{
-    background-color: #8758FF;
-    box-shadow: 2px 2px 5px #F2F2F2;
-   
+
+.heroRight img {
+  width: 80%;
+  max-width: 350px;
 }
-.heroRight>img{
-    width:80%;
-    height:50%;
-    position: relative;
-    top:120px;
+
+.quote {
+  color: #8758ff;
 }
-.section>aside{
-  position: sticky;
-  top:0px;
+
+.name {
+  font-size: 2rem;
 }
-.section>aside>.text{
-   writing-mode: vertical-rl;
-  text-orientation: sideways;
-  position: relative;
-  top:30%;
-  left:10px;
-  letter-spacing: 2px;
+
+.heroLeft button {
+  padding: 10px 15px;
+  margin: 10px;
+  background-color: #181818;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
 }
-.heroLeft>div>button>img{
-    color:white;
-    background-color: white;
+
+.heroLeft button:hover {
+  background-color: #8758ff;
 }
-/* ----------------------ABOUT SECTION DESIGN STARTS HERE-------------------- */
-.heading{
-    text-align: center;
+
+.point {
+  margin: 10px 0;
 }
-.horizontalLine{
-    border:5px solid  #8758FF;
-    border-radius: 10px;
-    width: 12%;
-    margin:-10px auto;
+
+/* ABOUT SECTION */
+
+.heading {
+  text-align: center;
+  margin-top: 60px;
 }
-.container{
-    width:90%;
-    margin:auto;
-    height:80vh;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    padding: 10px;
+
+.horizontalLine {
+  width: 60px;
+  height: 5px;
+  background-color: #8758ff;
+  border: none;
+  margin: 10px auto 30px auto;
+  border-radius: 10px;
 }
-.leftContainer{
-    background-color: #F2F2F2;
-    margin:30px;
-    width:45%;
-    height:90%;
-    padding: 10px;
-    display: flex;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+}
+
+.leftContainer,
+.rightContainer {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.leftContainer {
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.rightContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.rightContainer img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/* DESKTOP BREAKPOINT */
+
+@media (min-width: 1024px) {
+  .section {
+    flex-direction: row;
+  }
+
+  .section > main {
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    font-size: 1.1rem;
-    border-radius: 15px;
-}
-.rightContainer{
-    margin:20px;
-     width:45%;
-    height:90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+  }
 
-.rightContainer>div>img{
-   width:25vw;
-    height:25vw;
-    border-radius: 50%;  
-    
-}
-.design{
-    position: relative;
-    right:60px;
-    bottom:100px;
-    width:100px;
-    height:100px;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    /* border: 1px solid black; */
-}
-.design>div{
-    width:5px;
-    height:5px;
-    margin: 2px;
-    background-color: #181818;
-    border-radius: 50%;
-}
-.point{
+  .heroLeft {
+    width: 50%;
+    text-align: left;
     font-size: 1.2rem;
-}
+  }
 
+  .heroRight {
+    width: 50%;
+  }
 
-/* ----------------------ABOUT SECTION DESIGN ENDS HERE-------------------- */
-/* ---------------------SKILLS SECTION DESIGN STARTS HERE------------------------------ */
-.skills{
-    border:1px solid red;
-    
-}
-.skillQuote{
-    color:#8f8989;
-    width:60%;
-    margin:-30px auto;
-    border:1px solid green;
-    text-align: center;
-}
-/* ---------------------SKILLS SECTION DESIGN ENDS HERE------------------------------ */
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-@media screen and (max-width:1024px){
-    .heroRight>img{
-        width:90%;
-        height:60%;
-        position: relative;
-        top:100px;
-    }
-    .design{
-        height:100px;
-        width:100px;
-    }
-    .rightContainer>div>img{
-        width:350px;
-        height:350px;
-        border-radius: 50%;  
-    
-    }
-}
+  .leftContainer,
+  .rightContainer {
+    width: 45%;
+  }
 
-@media screen and (max-width:770px){
-    .heroLeft{
-        font-size: 1rem;
-    }
-    .heroLeft>div>button{
-        width:80px;
-        font-size: 0.8rem;
-    }
-    .heroRight>img{
-        width:90%;
-        height:60%;
-        position: relative;
-        top:100px;
-    }
-    .point{
-        font-size: 0.9rem;
-    }
-    .section>aside>.text{
-        position: relative;
-        top:30%;
-        left:10px;
-        letter-spacing: 2px;
-        font-size: 0.7rem;
-    }
-    .leftContainer{
-        font-size: 0.8rem;
-    }
-    .rightContainer>div>img{
-        width:250px;
-        height:250px; 
-    }
-    .design{
-        height:80px;
-        width:80px;
-    }
-}
-
-@media screen and (max-width:431px){
-    .heroRight{
-        display: none;
-    }
-    .section>aside>.text{
-       display: none;
-    }
-    .heroLeft{
-        width: 100%;
-    }
-    .heroLeft>div>button{
-        width:80px;
-        font-size: 0.9rem;
-    }
-    .section>main{
-    width:100%;
-   
-    }
-    .section{
-        width:100%;
-        
-    }
-    .section>main{
-        width:100%;
-        height:70vh;
-        padding: 0px;
-        display: flex;
-    }
-    .container{
-        flex-direction: column;
-    }
-    .leftContainer{
-        width:90%;
-    }
-    .rightContainer{
-        width: 90%;
-    }
-    .horizontalLine{
-        border:5px solid  #8758FF;
-        border-radius: 10px;
-        width: 25%;
-        margin:50px auto;
-    }
-    .heading{
-        margin-bottom: -40px;
-    }
-    
-
-
+  .rightContainer img {
+    width: 300px;
+    height: 300px;
+  }
 }

@@ -1,79 +1,62 @@
-.nav{
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background-color: #f2f2f2;
+  border-bottom: 4px solid #8758ff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.rightNavDiv ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.rightNavDiv a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.rightNavDiv a:hover {
+  color: #8758ff;
+}
+
+.activeLink {
+  border-bottom: 3px solid #8758ff;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: black;
+  margin: 4px 0;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .rightNavDiv {
+    display: none;
+  }
+
+  .hamburger {
     display: flex;
-    background-color: #F2F2F2;
-    border-bottom: 5px solid #8758FF;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    position: sticky;
-    top:0px;
-    z-index: 999;
-}
-.leftNavDiv{
-    width:40%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.rightNavDiv{
-    width:60%;
-}
-.rightNavDiv>ul{
-    display: flex;
-    float:right;
-    padding-right: 20px;
-}
-.rightNavDiv>ul>li{
-   list-style-type: none;
-   padding: 10px;
-}
-.rightNavDiv>ul>li>a{
-   text-decoration: none;
-   color:black;
-   font-weight: 600;
-}
-.rightNavDiv>ul>li>a:hover{
-   color:#355872;
-}
-.design{
-    width:60px;
-    height:60px;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-}
-.design>div{
-    width:5px;
-    height:5px;
-    margin: 2px;
-    background-color: grey;
-    border-radius: 50%;
-}
-.title{
-    width: 60%;
-    text-align: left;
-    position: relative;
-    right:40px;
-    top:10px;
-    color: #181818;
-    text-transform: uppercase;
-}
-.activeLink{
-    border-bottom: 4px solid #8758FF;
-    border-radius: 3px;
-}
-@media screen and (max-width:770px){
-    body{
-        font-size:0.9rem;
-    }
-    .title{
-        width:70%;
-    }
-}
-@media screen and (max-width:431px){
-    .rightNavDiv{
-        display: none;
-    }
-    .leftNavDiv{
-        width:80%;
-    }
+  }
 }
