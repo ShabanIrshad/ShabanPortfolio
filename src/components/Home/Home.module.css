@@ -93,7 +93,8 @@
 }
 
 .leftContainer {
-  background: #f2f2f2;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
   padding: 20px;
   border-radius: 15px;
 }
@@ -101,12 +102,36 @@
 .rightContainer {
   display: flex;
   justify-content: center;
+  background-color: white;
 }
+.design>div{
+    background-color: #181818;
+    width:10px;
+    height: 10px;
+    border: 1px solid white;
+}
+.design{
+    width:100px;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: auto;
+    border: 1px solid red;
+}
+
+
+
+
 
 .rightContainer img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+}
+.skills>.skillQuote{
+    /* border: 1px solid red; */
+    text-align: center;
+    margin: 0px auto;
 }
 
 /* DESKTOP BREAKPOINT */

@@ -52,6 +52,15 @@
 /* MOBILE */
 
 @media (max-width: 768px) {
+  /* .rightNavDiv {
+    display: no;
+  } */
+
+  .hamburger {
+    display: none;
+  }
+}
+@media (max-width: 431px) {
   .rightNavDiv {
     display: none;
   }

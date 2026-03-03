@@ -42,7 +42,7 @@ const Home=()=>{
                             <p> When I'm not coding I watch some show on Netflix, or if the weather's good, like to travel! </p>
                        </div>
                     </div>
-                    <div className={homeStyle.rightContainer}>
+                   <div className={`${homeStyle.rightContainer} ${homeStyle.aiBlob}`}>
                        
                         <div>
                             <img src={shaban} alt='my-image'/>
