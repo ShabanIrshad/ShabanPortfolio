@@ -1,6 +1,9 @@
 import homeStyle from './Home.module.css';
 import hero from '../../../src/Assets/hero.svg';
 import shaban from '../../../src/Assets/Shaban.png';
+import css from '../../Assets/css.png';
+import html from '../../Assets/html.png';
+import js from '../../Assets/js.png';
 const Home=()=>{
     return (
         <>  
@@ -42,14 +45,11 @@ const Home=()=>{
                             <p> When I'm not coding I watch some show on Netflix, or if the weather's good, like to travel! </p>
                        </div>
                     </div>
-                   <div className={`${homeStyle.rightContainer} ${homeStyle.aiBlob}`}>
+                   <div className={`${homeStyle.rightContainer} ${homeStyle.aibox}`}>
                        
                         <div>
                             <img src={shaban} alt='my-image'/>
                         </div>
-                         <div className={homeStyle.design}>
-                       <div></div><div></div><div></div><div></div><div></div><div></div><div></div> <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div> <div> <div> <div></div><div> <div></div><div></div><div></div><div></div></div><div></div><div></div><div></div><div></div><div></div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-                    </div>
                     </div>
                 </div>
 
@@ -58,6 +58,99 @@ const Home=()=>{
                 <h2 className={homeStyle.heading}>What I am good at</h2>
                 <p className={homeStyle.skillQuote}>Technologies I've mastered and use to bring ideas to life</p>
                 <hr className={homeStyle.horizontalLine}></hr>
+                <div className={homeStyle.skillContainer}>
+                    <div className={homeStyle.core}>
+                        <h3>Core Technologies</h3>
+                        <p>My foundation and expertise.</p>
+                        <ul>
+                            <li>
+                                <div className={homeStyle.skillTitle}>
+                                    <img src={js} alt='skill'/><p>Javascript</p><small>80%</small>
+                                </div>
+                                <div className={homeStyle.skillBar}>
+                                    <div></div>
+                                </div>
+                            </li>
+                             <li>
+                                <div className={homeStyle.skillTitle}>
+                                    <img src={html} alt='skill'/><p>HTML5</p>
+                                </div>
+                                <div className={homeStyle.skillBar}>
+                                    <div></div>
+                                </div>
+                            </li>
+                             <li>
+                                <div className={homeStyle.skillTitle}>
+                                    <img src={css} alt='skill'/><p>CSS</p>
+                                </div>
+                                <div className={homeStyle.skillBar}>
+                                    <div></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className={homeStyle.framework}>
+                         <h3>Frameworks & Liabraries</h3>
+                        <p>Tools I love working with.</p>
+                        <ul>
+                            <li>
+                                <div className={homeStyle.skillTitle}>
+                                    <img src={js} alt='skill'/><p>Javascript</p>
+                                </div>
+                                <div className={homeStyle.skillBar}>
+                                    <div></div>
+                                </div>
+                            </li>
+                             <li>
+                                <div className={homeStyle.skillTitle}>
+                                    <img src={html} alt='skill'/><p>HTML5</p>
+                                </div>
+                                <div className={homeStyle.skillBar}>
+                                    <div></div>
+                                </div>
+                            </li>
+                             <li>
+                                <div className={homeStyle.skillTitle}>
+                                    <img src={css} alt='skill'/><p>CSS</p>
+                                </div>
+                                <div className={homeStyle.skillBar}>
+                                    <div></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className={homeStyle.tool}>
+                         <h3>Tools & Platforms</h3>
+                        <p>Essential tools in my workflow.</p>
+                        <ul>
+                            <li>
+                                <div className={homeStyle.skillTitle}>
+                                    <img src={js} alt='skill'/><p>Javascript</p>
+                                </div>
+                                <div className={homeStyle.skillBar}>
+                                    <div></div>
+                                </div>
+                            </li>
+                             <li>
+                                <div className={homeStyle.skillTitle}>
+                                    <img src={html} alt='skill'/><p>HTML5</p>
+                                </div>
+                                <div className={homeStyle.skillBar}>
+                                    <div></div>
+                                </div>
+                            </li>
+                             <li>
+                                <div className={homeStyle.skillTitle}>
+                                    <img src={css} alt='skill'/><p>CSS</p>
+                                </div>
+                                <div className={homeStyle.skillBar}>
+                                    <div></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
             </section>
             
         </>
