@@ -4,6 +4,16 @@ import shaban from '../../../src/Assets/Shaban.png';
 import css from '../../Assets/css.png';
 import html from '../../Assets/html.png';
 import js from '../../Assets/js.png';
+import react from '../../Assets/react.png';
+import node from '../../Assets/nodejs.png';
+import tailwind from '../../Assets/tailwind.png';
+import mongo from '../../Assets/mongodb.svg';
+import bootstrap from '../../Assets/bootstrap.jpg';
+import git from '../../Assets/gi.png';
+import firebase from '../../Assets/fire.png';
+import postman from '../../Assets/postman.webp';
+import vscode from '../../Assets/vscode.png';
+
 const Home=()=>{
     return (
         <>  
@@ -63,27 +73,27 @@ const Home=()=>{
                         <h3>Core Technologies</h3>
                         <p>My foundation and expertise.</p>
                         <ul>
-                            <li>
+                            <li className={homeStyle.js}>
                                 <div className={homeStyle.skillTitle}>
-                                    <img src={js} alt='skill'/><p>Javascript</p><small>80%</small>
+                                    <img src={js} alt='skill'/><p>Javascript</p><small className={`${homeStyle.progressPercent} ${homeStyle.progressPercentJs}`}>85%</small>
                                 </div>
-                                <div className={homeStyle.skillBar}>
+                                <div className={`${homeStyle.skillBar} ${homeStyle.skillBarJs}`}>
                                     <div></div>
                                 </div>
                             </li>
-                             <li>
+                             <li className={homeStyle.html}>
                                 <div className={homeStyle.skillTitle}>
-                                    <img src={html} alt='skill'/><p>HTML5</p>
+                                    <img src={html} alt='skill'/><p>HTML5</p><small className={`${homeStyle.progressPercent} ${homeStyle.progressPercenthtml}`}>90%</small>
                                 </div>
-                                <div className={homeStyle.skillBar}>
+                                <div className={`${homeStyle.skillBar} ${homeStyle.skillBarhtml}`}>
                                     <div></div>
                                 </div>
                             </li>
-                             <li>
+                             <li className={homeStyle.css}>
                                 <div className={homeStyle.skillTitle}>
-                                    <img src={css} alt='skill'/><p>CSS</p>
+                                    <img src={css} alt='skill'/><p>CSS</p><small className={`${homeStyle.progressPercent} ${homeStyle.progressPercentcss}`}>90%</small>
                                 </div>
-                                <div className={homeStyle.skillBar}>
+                                <div className={`${homeStyle.skillBar} ${homeStyle.skillBarcss}`}>
                                     <div></div>
                                 </div>
                             </li>
@@ -93,27 +103,43 @@ const Home=()=>{
                          <h3>Frameworks & Liabraries</h3>
                         <p>Tools I love working with.</p>
                         <ul>
-                            <li>
+                           <li className={homeStyle.react}>
                                 <div className={homeStyle.skillTitle}>
-                                    <img src={js} alt='skill'/><p>Javascript</p>
+                                    <img src={react} alt='skill'/><p>React.js</p><small className={`${homeStyle.progressPercent} ${homeStyle.progressPercentreact}`}>90%</small>
                                 </div>
-                                <div className={homeStyle.skillBar}>
+                                <div className={`${homeStyle.skillBar} ${homeStyle.skillBarreact}`}>
                                     <div></div>
                                 </div>
                             </li>
-                             <li>
+                             <li className={homeStyle.node}>
                                 <div className={homeStyle.skillTitle}>
-                                    <img src={html} alt='skill'/><p>HTML5</p>
+                                    <img src={node} alt='skill'/><p>Node.js</p><small className={`${homeStyle.progressPercent} ${homeStyle.progressPercentnode}`}>80%</small>
                                 </div>
-                                <div className={homeStyle.skillBar}>
+                                <div className={`${homeStyle.skillBar} ${homeStyle.skillBarnode}`}>
                                     <div></div>
                                 </div>
                             </li>
-                             <li>
+                            <li className={homeStyle.tailwind}>
                                 <div className={homeStyle.skillTitle}>
-                                    <img src={css} alt='skill'/><p>CSS</p>
+                                    <img src={tailwind} alt='skill'/><p>Tailwind</p><small className={`${homeStyle.progressPercent} ${homeStyle.progressPercenttailwind}`}>70%</small>
                                 </div>
-                                <div className={homeStyle.skillBar}>
+                                <div className={`${homeStyle.skillBar} ${homeStyle.skillBartailwind}`}>
+                                    <div></div>
+                                </div>
+                            </li>
+                             <li className={homeStyle.mongo}>
+                                <div className={homeStyle.skillTitle}>
+                                    <img src={mongo} alt='skill'/><p>MongoDB</p><small className={`${homeStyle.progressPercent} ${homeStyle.progressPercentmongo}`}>55%</small>
+                                </div>
+                                <div className={`${homeStyle.skillBar} ${homeStyle.skillBarmongo}`}>
+                                    <div></div>
+                                </div>
+                            </li>
+                             <li className={homeStyle.bootstrap}>
+                                <div className={homeStyle.skillTitle}>
+                                    <img src={bootstrap} alt='skill'/><p>Bootstrap5</p><small className={`${homeStyle.progressPercent} ${homeStyle.progressPercentbootstrap}`}>75%</small>
+                                </div>
+                                <div className={`${homeStyle.skillBar} ${homeStyle.skillBarbootstrap}`}>
                                     <div></div>
                                 </div>
                             </li>
@@ -123,30 +149,40 @@ const Home=()=>{
                          <h3>Tools & Platforms</h3>
                         <p>Essential tools in my workflow.</p>
                         <ul>
-                            <li>
+                             <li className={homeStyle.github}>
                                 <div className={homeStyle.skillTitle}>
-                                    <img src={js} alt='skill'/><p>Javascript</p>
+                                    <img src={git} alt='skill'/><p>Github</p><small className={`${homeStyle.progressPercent} ${homeStyle.progressPercentgithub}`}>75%</small>
                                 </div>
-                                <div className={homeStyle.skillBar}>
+                                <div className={`${homeStyle.skillBar} ${homeStyle.skillBargithub}`}>
                                     <div></div>
                                 </div>
                             </li>
-                             <li>
+                             <li className={homeStyle.firebase}>
                                 <div className={homeStyle.skillTitle}>
-                                    <img src={html} alt='skill'/><p>HTML5</p>
+                                    <img src={firebase} alt='skill'/><p>Firebase</p><small className={`${homeStyle.progressPercent} ${homeStyle.progressPercentfirebase}`}>90%</small>
                                 </div>
-                                <div className={homeStyle.skillBar}>
+                                <div className={`${homeStyle.skillBar} ${homeStyle.skillBarfirebase}`}>
                                     <div></div>
                                 </div>
                             </li>
-                             <li>
+                             <li className={homeStyle.postman}>
                                 <div className={homeStyle.skillTitle}>
-                                    <img src={css} alt='skill'/><p>CSS</p>
+                                    <img src={postman} alt='skill'/><p>Postman</p><small className={`${homeStyle.progressPercent} ${homeStyle.progressPercentpostman}`}>90%</small>
                                 </div>
-                                <div className={homeStyle.skillBar}>
+                                <div className={`${homeStyle.skillBar} ${homeStyle.skillBarpostman}`}>
                                     <div></div>
                                 </div>
                             </li>
+                             <li className={homeStyle.vscode}>
+                                <div className={homeStyle.skillTitle}>
+                                    <img src={vscode} alt='skill'/><p>VS Code</p><small className={`${homeStyle.progressPercent} ${homeStyle.progressPercentvscode}`}>90%</small>
+                                </div>
+                                <div className={`${homeStyle.skillBar} ${homeStyle.skillBarvscode}`}>
+                                    <div></div>
+                                </div>
+                            </li>
+                            
+                           
                         </ul>
                     </div>
 
