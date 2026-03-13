@@ -13,6 +13,8 @@ import git from '../../Assets/gi.png';
 import firebase from '../../Assets/fire.png';
 import postman from '../../Assets/postman.webp';
 import vscode from '../../Assets/vscode.png';
+import pro from '../../Assets/pro.jpg';
+import link from '../../Assets/link.png';
 
 const Home=()=>{
     return (
@@ -187,6 +189,38 @@ const Home=()=>{
                     </div>
 
                 </div>
+            </section>
+            <section id='project' className={homeStyle.about}>
+                <h2 className={homeStyle.heading}>Featured Projects</h2>
+                <p className={homeStyle.skillQuote}>Some things I've built to solve real-world problems</p>
+                <hr className={homeStyle.horizontalLine}></hr>
+                <div className={homeStyle.projectContainer}>
+                    <div className={homeStyle.leftProjectContainer}>
+                       <img src={pro} alt='pro_img'/>
+                    </div>
+                   <div className={homeStyle.rightProjectContainer}> 
+                        <div className={homeStyle.desc}>
+                            <h2>Portfolio Website</h2>
+                            <hr/>
+                            <p>A responsive and modern portfolio built with Next.js and Tailwind CSS, featuring smooth animations and elegant UI.Integrated with Google Analytics to track user interactions and optimize performance.Showcases my projects, skills, and experience with a clean and professional design</p>
+                        </div>
+                        <div className={homeStyle.tech}>                           
+                            <div><img src={html} alt='html'/>HTML5</div>
+                            <div><img src={css} alt='html'/>CSS3</div>
+                            <div><img src={react} alt='html'/>React.js</div>
+                        </div>
+                        <div className={homeStyle.links}>
+                            <a href='https://github.com/ShabanIrshad/ShabanPortfolio/tree/main' target='blank'>
+                                <img src={git} alt='link'/>
+                            </a>
+                            <a href='https://shaban-portfolio-ochre.vercel.app/' target='blank'>
+                                <img src={link} alt='link'/>Live Demo
+                            </a>
+                        </div>
+                        
+                   </div>
+                </div>
+
             </section>
             
         </>
