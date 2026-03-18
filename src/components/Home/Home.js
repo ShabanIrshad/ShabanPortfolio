@@ -14,6 +14,9 @@ import firebase from '../../Assets/fire.png';
 import postman from '../../Assets/postman.webp';
 import vscode from '../../Assets/vscode.png';
 import pro from '../../Assets/pro.jpg';
+import img1 from '../../Assets/img1.png';
+import img2 from '../../Assets/img2.png';
+import img3 from '../../Assets/img3.png';
 import link from '../../Assets/link.png';
 
 const Home=()=>{
@@ -196,13 +199,13 @@ const Home=()=>{
                 <hr className={homeStyle.horizontalLine}></hr>
                 <div className={homeStyle.projectContainer}>
                     <div className={homeStyle.leftProjectContainer}>
-                       <img src={pro} alt='pro_img'/>
+                       <img src={img1} alt='pro_img'/>
                     </div>
                    <div className={homeStyle.rightProjectContainer}> 
                         <div className={homeStyle.desc}>
                             <h2>Portfolio Website</h2>
                             <hr/>
-                            <p>A responsive and modern portfolio built with Next.js and Tailwind CSS, featuring smooth animations and elegant UI.Integrated with Google Analytics to track user interactions and optimize performance.Showcases my projects, skills, and experience with a clean and professional design</p>
+                            <p>A responsive and modern portfolio built with React.js and CSS, featuring smooth animations and elegant UI. Showcases my projects, skills, and experience with a clean and professional design.</p>
                         </div>
                         <div className={homeStyle.tech}>                           
                             <div><img src={html} alt='html'/>HTML5</div>
@@ -214,7 +217,84 @@ const Home=()=>{
                                 <img src={git} alt='link'/>
                             </a>
                             <a href='https://shaban-portfolio-ochre.vercel.app/' target='blank'>
-                                <img src={link} alt='link'/>Live Demo
+                                <img src={link} alt='link'/>
+                            </a>
+                        </div>
+                        
+                   </div>
+                </div>
+                <div className={homeStyle.projectContainer}>
+                    <div className={homeStyle.leftProjectContainer}>
+                       <img src={img2} alt='pro_img'/>
+                    </div>
+                   <div className={homeStyle.rightProjectContainer}> 
+                        <div className={homeStyle.desc}>
+                            <h2>Pizza Restaurant UI</h2>
+                            <hr/>
+                            <p>A responsive and modern portfolio built with React.js and CSS, featuring smooth animations and elegant UI. Showcases my projects, skills, and experience with a clean and professional design.</p>
+                        </div>
+                        <div className={homeStyle.tech}>                           
+                            <div><img src={html} alt='html'/>HTML5</div>
+                            <div><img src={css} alt='html'/>CSS3</div>
+                        </div>
+                        <div className={homeStyle.links}>
+                            <a href='https://github.com/ShabanIrshad/PizzaRestaurant/tree/main' target='blank'>
+                                <img src={git} alt='link'/>
+                            </a>
+                            <a href='https://pizza-restaurant-xenf.onrender.com/' target='blank'>
+                                <img src={link} alt='link'/>
+                            </a>
+                        </div>
+                        
+                   </div>
+                </div>
+                <div className={homeStyle.projectContainer}>
+                    <div className={homeStyle.leftProjectContainer}>
+                       <img src={img3} alt='pro_img'/>
+                    </div>
+                   <div className={homeStyle.rightProjectContainer}> 
+                        <div className={homeStyle.desc}>
+                            <h2>Coin Gecko API</h2>
+                            <hr/>
+                            <p>A responsive and modern portfolio built with React.js and CSS, featuring smooth animations and elegant UI. Showcases my projects, skills, and experience with a clean and professional design.</p>
+                        </div>
+                        <div className={homeStyle.tech}>                           
+                            <div><img src={html} alt='html'/>HTML5</div>
+                            <div><img src={css} alt='html'/>CSS3</div>
+                            <div><img src={react} alt='html'/>React.js</div>
+                        </div>
+                        <div className={homeStyle.links}>
+                            <a href='https://github.com/ShabanIrshad/coin-gecko' target='blank'>
+                                <img src={git} alt='link'/>
+                            </a>
+                            <a href='https://coin-gecko-inky.vercel.app/' target='blank'>
+                                <img src={link} alt='link'/>
+                            </a>
+                        </div>
+                        
+                   </div>
+                </div>
+                <div className={homeStyle.projectContainer}>
+                    <div className={homeStyle.leftProjectContainer}>
+                       <img src={pro} alt='pro_img'/>
+                    </div>
+                   <div className={homeStyle.rightProjectContainer}> 
+                        <div className={homeStyle.desc}>
+                            <h2>Portfolio Website</h2>
+                            <hr/>
+                            <p>A responsive and modern portfolio built with React.js and CSS, featuring smooth animations and elegant UI. Showcases my projects, skills, and experience with a clean and professional design.</p>
+                        </div>
+                        <div className={homeStyle.tech}>                           
+                            <div><img src={html} alt='html'/>HTML5</div>
+                            <div><img src={css} alt='html'/>CSS3</div>
+                            <div><img src={react} alt='html'/>React.js</div>
+                        </div>
+                        <div className={homeStyle.links}>
+                            <a href='https://github.com/ShabanIrshad/ShabanPortfolio/tree/main' target='blank'>
+                                <img src={git} alt='link'/>
+                            </a>
+                            <a href='https://shaban-portfolio-ochre.vercel.app/' target='blank'>
+                                <img src={link} alt='link'/>
                             </a>
                         </div>
                         
