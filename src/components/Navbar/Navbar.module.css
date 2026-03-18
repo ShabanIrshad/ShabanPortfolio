@@ -52,9 +52,6 @@
 /* MOBILE */
 
 @media (max-width: 768px) {
-  /* .rightNavDiv {
-    display: no;
-  } */
 
   .hamburger {
     display: none;
