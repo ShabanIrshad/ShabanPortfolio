@@ -479,7 +479,7 @@
     font-size: 0.8rem;
   }
 }
-@media (min-width: 320px) and (max-width: 430px) {
+@media (min-width: 320px) and (max-width: 435px) {
   .skillContainer > div {
     min-width: 200px;
     max-width: 400px;
