@@ -494,28 +494,87 @@ const Home = () => {
           Here are some of my key achievements.
         </p>
         <hr className={homeStyle.horizontalLine}></hr>
-       <div className={homeStyle.achContainer}>
-  <div className={homeStyle.scrollTrack}>
-    
-    <div className={homeStyle.scrollContent}>
-      {[...Array(6)].map((_, i) => (
-        <span key={i}>
-          <img src={webDev} alt="img" />
-        </span>
-      ))}
-    </div>
-
-    {/* duplicate */}
-    <div className={homeStyle.scrollContent}>
-      {[...Array(6)].map((_, i) => (
-        <span key={"dup-" + i}>
-          <img src={webDev} alt="img" />
-        </span>
-      ))}
-    </div>
-
-  </div>
-</div>
+        <div className={homeStyle.carousel}>
+            <div className={homeStyle.group1}>
+              <div>
+                <a href="https://certificate.codingninjas.com/view/7b5d36cb5ee547e9">
+                  <img src={webDev} alt="img" />
+                  <p>Web Development</p>
+                </a>
+                
+                
+              </div>
+               <div>
+                 <a href="https://certificate.codingninjas.com/view/7b5d36cb5ee547e9">
+                  <img src={webDev} alt="img" />
+                   <p>Web Development</p>
+                </a>
+              </div>
+               <div>
+                <a href="https://certificate.codingninjas.com/view/7b5d36cb5ee547e9">
+                  <img src={webDev} alt="img" />
+                   <p>Web Development</p>
+                </a>
+              </div>
+               <div>
+                <a href="https://certificate.codingninjas.com/view/7b5d36cb5ee547e9">
+                  <img src={webDev} alt="img" />
+                   <p>Web Development</p>
+                </a>
+              </div>
+               <div>
+               <a href="https://certificate.codingninjas.com/view/7b5d36cb5ee547e9">
+                  <img src={webDev} alt="img" />
+                   <p>Web Development</p>
+                </a>
+              </div>
+               <div>
+               <a href="https://certificate.codingninjas.com/view/7b5d36cb5ee547e9">
+                  <img src={webDev} alt="img" />
+                   <p>Web Development</p>
+                </a>
+              </div>
+            </div>
+             <div aria-hidden className={homeStyle.group1}>
+              <div>
+               <a href="https://certificate.codingninjas.com/view/7b5d36cb5ee547e9">
+                  <img src={webDev} alt="img" />
+                  <p>Web Development</p>
+                </a>
+              </div>
+               <div>
+               <a href="https://certificate.codingninjas.com/view/7b5d36cb5ee547e9">
+                  <img src={webDev} alt="img" />
+                  <p>Web Development</p>
+                </a>
+              </div>
+               <div>
+               <a href="https://certificate.codingninjas.com/view/7b5d36cb5ee547e9">
+                  <img src={webDev} alt="img" />
+                  <p>Web Development</p>
+                </a>
+              </div>
+               <div>
+               <a href="https://certificate.codingninjas.com/view/7b5d36cb5ee547e9">
+                  <img src={webDev} alt="img" />
+                  <p>Web Development</p>
+                </a>
+              </div>
+               <div>
+               <a href="https://certificate.codingninjas.com/view/7b5d36cb5ee547e9">
+                  <img src={webDev} alt="img" />
+                  <p>Web Development</p>
+                </a>
+              </div>
+               <div>
+               <a href="https://certificate.codingninjas.com/view/7b5d36cb5ee547e9">
+                  <img src={webDev} alt="img" />
+                  <p>Web Development</p>
+                </a>
+              </div>
+            </div>
+            
+        </div>
       </section>
     </>
   );

@@ -430,40 +430,51 @@
 
 /* -------------------PROJECT SECTION CSS ENDS HERE--------------------- */
 /* -------------------ACHEIVEMENTS SECTION CSS STARTS HERE--------------------- */
-.achContainer {
+.carousel {
   border: 1px solid red;
   width: 95%;
   margin: auto;
   padding: 10px;
+  display: flex;
   overflow: hidden;
+  overflow-x: auto;
+  gap: 1em;
+  cursor: pointer;
 }
-
-.scrollTrack {
+.group1{
   display: flex;
-  width: max-content;
-  animation: scroll 10s linear infinite;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  padding-right: 1em;
+  animation: scroll 5s infinite linear;
+}
+.group1>div>a>img{
+  width:200px;
+  height:200px;
+}
+.group1>div>a{
+  text-decoration: none;
+  border: 1px solid red;
+}
+.carousel:hover .group1{
+  animation-play-state: paused;
+}
+.group1>div{
+  flex: 0 0 5em;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
-.scrollContent {
-  display: flex;
-}
 
-.scrollContent span {
-  display: inline-block;
-}
-
-.scrollContent img {
-  width: 200px;
-  height: 200px;
-}
-
-/* KEY PART */
+/* KEY PART ANIMATION*/
 @keyframes scroll {
   from {
-    transform: translateX(0);
+    translate: 0;
   }
   to {
-    transform: translateX(-50%);
+    translate: -100%;
   }
 }
 /* -------------------ACHEIVEMENTS SECTION CSS ENDS HERE--------------------- */
