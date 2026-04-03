@@ -387,9 +387,10 @@
   flex-direction: row;
   overflow-x: scroll;
 }
-/* .projectContainer>::-webkit-scrollbar{
+::-webkit-scrollbar{
   visibility: hidden;
-} */
+  
+}
 .tech > div {
   color: white;
   font-weight: 500;
@@ -428,6 +429,46 @@
 }
 
 /* -------------------PROJECT SECTION CSS ENDS HERE--------------------- */
+/* -------------------ACHEIVEMENTS SECTION CSS STARTS HERE--------------------- */
+.achContainer {
+  border: 1px solid red;
+  width: 95%;
+  margin: auto;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.scrollTrack {
+  display: flex;
+  width: max-content;
+  animation: scroll 10s linear infinite;
+}
+
+.scrollContent {
+  display: flex;
+}
+
+.scrollContent span {
+  display: inline-block;
+}
+
+.scrollContent img {
+  width: 200px;
+  height: 200px;
+}
+
+/* KEY PART */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+/* -------------------ACHEIVEMENTS SECTION CSS ENDS HERE--------------------- */
+
+
 
 /* DESKTOP BREAKPOINT */
 
