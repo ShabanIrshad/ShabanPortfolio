@@ -431,7 +431,6 @@
 /* -------------------PROJECT SECTION CSS ENDS HERE--------------------- */
 /* -------------------ACHEIVEMENTS SECTION CSS STARTS HERE--------------------- */
 .carousel {
-  border: 1px solid red;
   width: 95%;
   margin: auto;
   padding: 10px;
@@ -446,16 +445,26 @@
   align-items: center;
   justify-content: center;
   gap: 1em;
+  margin-right: -10px;
   padding-right: 1em;
-  animation: scroll 5s infinite linear;
+  animation: scroll 15s infinite linear;
+  
 }
 .group1>div>a>img{
-  width:200px;
+  width:250px;
   height:200px;
 }
 .group1>div>a{
   text-decoration: none;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  color: black;
+  text-align: center;
+  font-weight: 600;  
+  margin: 0;
+  padding: 0;
+}
+.group1>div>a>p{
+    margin-top: 0px;
 }
 .carousel:hover .group1{
   animation-play-state: paused;
@@ -463,8 +472,12 @@
 .group1>div{
   flex: 0 0 5em;
   padding: 5px;
-  border: 1px solid black;
   border-radius: 10px;
+  cursor: pointer;
+}
+.group1>div:hover{
+  background-color: #f1eded;
+  transform: scale3d(-10px);
 }
 
 
