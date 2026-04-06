@@ -345,6 +345,10 @@
 .projectContainer:nth-child(odd) {
   flex-direction: row-reverse;
 }
+.tech::-webkit-scrollbar{
+  visibility: hidden;
+  
+}
 .desc {
   border: 1px solid #e5e7eb;
   margin: auto;
@@ -387,10 +391,7 @@
   flex-direction: row;
   overflow-x: scroll;
 }
-::-webkit-scrollbar{
-  visibility: hidden;
-  
-}
+
 .tech > div {
   color: white;
   font-weight: 500;
@@ -440,6 +441,10 @@
   gap: 1em;
   cursor: pointer;
 }
+.carousel::-webkit-scrollbar{
+  visibility: hidden;
+  
+}
 .group1{
   display: flex;
   align-items: center;
@@ -476,7 +481,7 @@
   cursor: pointer;
 }
 .group1>div:hover{
-  background-color: #f1eded;
+  background: linear-gradient(45deg, white,#8758ff);
   transform: scale3d(-10px);
 }
 
@@ -492,6 +497,34 @@
 }
 /* -------------------ACHEIVEMENTS SECTION CSS ENDS HERE--------------------- */
 
+/* -------------------CONTACT SECTION CSS STARTS HERE--------------------- */
+.contactContainer{
+  border: 1px solid red;
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.leftContact{
+  width: 60%;
+  border: 1px solid yellow;
+  padding: 10px;
+}
+/* .leftContact>form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.rightContact{
+  width: 30%;
+  border: 1px solid green;
+  padding: 10px;
+}
+
+/* -------------------CONTACT SECTION CSS ENDS HERE--------------------- */
 
 
 /* DESKTOP BREAKPOINT */

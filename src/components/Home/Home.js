@@ -20,6 +20,8 @@ import img4 from "../../Assets/img4.png";
 import link from "../../Assets/link.png";
 import webDev from "../../Assets/webDevelopment.jpg";
 import genAi from "../../Assets/generativeAI.jpg";
+import sql from "../../Assets/sql.png";
+import sqlServer from "../../Assets/sqlServer.png";
 import reactjs from "../../Assets/reactjs.jpg";
 import dsfree from "../../Assets/dsfree.png";
 import fullStack from "../../Assets/DT24070066.png";
@@ -146,6 +148,22 @@ const Home = () => {
                 <div className={homeStyle.skillTitle}>
                   <img src={css} alt="skill" />
                   <p>CSS</p>
+                  <small
+                    className={`${homeStyle.progressPercent} ${homeStyle.progressPercentcss}`}
+                  >
+                    90%
+                  </small>
+                </div>
+                <div
+                  className={`${homeStyle.skillBar} ${homeStyle.skillBarcss}`}
+                >
+                  <div></div>
+                </div>
+              </li>
+                <li className={homeStyle.css}>
+                <div className={homeStyle.skillTitle}>
+                  <img src={sql} alt="skill" />
+                  <p>SQL</p>
                   <small
                     className={`${homeStyle.progressPercent} ${homeStyle.progressPercentcss}`}
                   >
@@ -302,6 +320,22 @@ const Home = () => {
                 <div className={homeStyle.skillTitle}>
                   <img src={vscode} alt="skill" />
                   <p>VS Code</p>
+                  <small
+                    className={`${homeStyle.progressPercent} ${homeStyle.progressPercentvscode}`}
+                  >
+                    90%
+                  </small>
+                </div>
+                <div
+                  className={`${homeStyle.skillBar} ${homeStyle.skillBarvscode}`}
+                >
+                  <div></div>
+                </div>
+              </li>
+               <li className={homeStyle.vscode}>
+                <div className={homeStyle.skillTitle}>
+                  <img src={sqlServer} alt="skill" />
+                  <p>SQL Server</p>
                   <small
                     className={`${homeStyle.progressPercent} ${homeStyle.progressPercentvscode}`}
                   >
@@ -496,129 +530,148 @@ const Home = () => {
           </div>
         </div>
       </section>
-        <section id="about" className={homeStyle.about}>
+      <section id="about" className={homeStyle.about}>
         <h2 className={homeStyle.heading}>Achievements</h2>
-         <p className={homeStyle.skillQuote}>
+        <p className={homeStyle.skillQuote}>
           Here are some of my key achievements.
         </p>
         <hr className={homeStyle.horizontalLine}></hr>
         <div className={homeStyle.carousel}>
-            <div className={homeStyle.group1}>
-              <div>
-                <a href="https://certificate.codingninjas.com/view/7b5d36cb5ee547e9">
-                  <img src={webDev} alt="img" />
-                  <p>Web Development</p>
-                </a>
-                
-                
-              </div>
-               <div>
-                 <a href="https://certificate.codingninjas.com/view/4adfdd37bcc2d552">
-                  <img src={genAi} alt="img" />
-                   <p>Generative AI</p>
-                </a>
-              </div>
-               <div>
-                <a href="https://drive.google.com/file/d/1o7jbr9I61J2AZDOEaZQdtaX2-jLmU8a3/view">
-                  <img src={reactjs} alt="img" />
-                   <p>ReactJs</p>
-                </a>
-              </div>
-               <div>
-                <a href="https://github.com/ShabanIrshad/JavaScript-Alogorithm-and-Data-Structure-Certificateion-freeCodeCamp-/blob/main/FreeCodeCampCertificate.jpg">
-                  <img src={dsfree} alt="img" />
-                   <p>Data Structures in JS</p>
-                </a>
-              </div>
-               <div>
-               <a href="https://www.diginique.com/wp-content/uploads/DT24070066.png">
-                  <img src={fullStack} alt="img" />
-                   <p>Full Stack Development</p>
-                </a>
-              </div>
-               <div>
-               <a href="https://certificate.codingninjas.com/view/7b5d36cb5ee547e9">
-                  <img src={dsjava} alt="img" />
-                   <p>Data Structures in Java</p>
-                </a>
-              </div>
-               <div>
-               <a href="https://www.hackerrank.com/certificates/iframe/995f8aa84822">
-                  <img src={javaBasic} alt="img" />
-                  <p>Java Basic</p>
-                </a>
-              </div>
-               <div>
-               <a href="https://drive.google.com/file/d/1aADrMNBKOhrWNhMt-eaiRDnv0gYzxeTa/view">
-                  <img src={sqlData} alt="img" />
-                  <p>SQl Data Analytics</p>
-                </a>
-              </div>
-               <div>
-               <a href="https://drive.google.com/file/d/1zF_R0itfh58y6uO0EWiQmPc_dCR509fZ/view">
-                  <img src={ninjaSlayground} alt="img" />
-                  <p>Ninja Slayground2.0</p>
-                </a>
-              </div>
+          <div className={homeStyle.group1}>
+            <div>
+              <a href="https://certificate.codingninjas.com/view/7b5d36cb5ee547e9">
+                <img src={webDev} alt="img" />
+                <p>Web Development</p>
+              </a>
             </div>
-             <div aria-hidden className={homeStyle.group1}>
-             <div>
-                <a href="https://certificate.codingninjas.com/view/7b5d36cb5ee547e9">
-                  <img src={webDev} alt="img" />
-                  <p>Web Development</p>
-                </a>
-                
-                
-              </div>
-               <div>
-                 <a href="https://certificate.codingninjas.com/view/4adfdd37bcc2d552">
-                  <img src={genAi} alt="img" />
-                   <p>Generative AI</p>
-                </a>
-              </div>
-               <div>
-                <a href="https://drive.google.com/file/d/1o7jbr9I61J2AZDOEaZQdtaX2-jLmU8a3/view">
-                  <img src={reactjs} alt="img" />
-                   <p>ReactJs</p>
-                </a>
-              </div>
-               <div>
-                <a href="https://github.com/ShabanIrshad/JavaScript-Alogorithm-and-Data-Structure-Certificateion-freeCodeCamp-/blob/main/FreeCodeCampCertificate.jpg">
-                  <img src={dsfree} alt="img" />
-                   <p>Data Structures in JS</p>
-                </a>
-              </div>
-               <div>
-               <a href="https://www.diginique.com/wp-content/uploads/DT24070066.png">
-                  <img src={fullStack} alt="img" />
-                   <p>Full Stack Development</p>
-                </a>
-              </div>
-               <div>
-               <a href="https://certificate.codingninjas.com/view/7b5d36cb5ee547e9">
-                  <img src={dsjava} alt="img" />
-                   <p>Data Structures in Java</p>
-                </a>
-              </div>
-               <div>
-               <a href="https://www.hackerrank.com/certificates/iframe/995f8aa84822">
-                  <img src={javaBasic} alt="img" />
-                  <p>Java Basic</p>
-                </a>
-              </div>
-               <div>
-               <a href="https://drive.google.com/file/d/1aADrMNBKOhrWNhMt-eaiRDnv0gYzxeTa/view">
-                  <img src={sqlData} alt="img" />
-                  <p>SQl Data Analytics</p>
-                </a>
-              </div>
-               <div>
-               <a href="https://drive.google.com/file/d/1zF_R0itfh58y6uO0EWiQmPc_dCR509fZ/view">
-                  <img src={ninjaSlayground} alt="img" />
-                  <p>Ninja Slayground2.0</p>
-                </a>
-              </div>
-              </div>
+            <div>
+              <a href="https://certificate.codingninjas.com/view/4adfdd37bcc2d552">
+                <img src={genAi} alt="img" />
+                <p>Generative AI</p>
+              </a>
+            </div>
+            <div>
+              <a href="https://drive.google.com/file/d/1o7jbr9I61J2AZDOEaZQdtaX2-jLmU8a3/view">
+                <img src={reactjs} alt="img" />
+                <p>ReactJs</p>
+              </a>
+            </div>
+            <div>
+              <a href="https://github.com/ShabanIrshad/JavaScript-Alogorithm-and-Data-Structure-Certificateion-freeCodeCamp-/blob/main/FreeCodeCampCertificate.jpg">
+                <img src={dsfree} alt="img" />
+                <p>Data Structures in JS</p>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.diginique.com/wp-content/uploads/DT24070066.png">
+                <img src={fullStack} alt="img" />
+                <p>Full Stack Development</p>
+              </a>
+            </div>
+            <div>
+              <a href="https://certificate.codingninjas.com/view/7b5d36cb5ee547e9">
+                <img src={dsjava} alt="img" />
+                <p>Data Structures in Java</p>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.hackerrank.com/certificates/iframe/995f8aa84822">
+                <img src={javaBasic} alt="img" />
+                <p>Java Basic</p>
+              </a>
+            </div>
+            <div>
+              <a href="https://drive.google.com/file/d/1aADrMNBKOhrWNhMt-eaiRDnv0gYzxeTa/view">
+                <img src={sqlData} alt="img" />
+                <p>SQl Data Analytics</p>
+              </a>
+            </div>
+            <div>
+              <a href="https://drive.google.com/file/d/1zF_R0itfh58y6uO0EWiQmPc_dCR509fZ/view">
+                <img src={ninjaSlayground} alt="img" />
+                <p>Ninja Slayground2.0</p>
+              </a>
+            </div>
+          </div>
+          <div aria-hidden className={homeStyle.group1}>
+            <div>
+              <a href="https://certificate.codingninjas.com/view/7b5d36cb5ee547e9">
+                <img src={webDev} alt="img" />
+                <p>Web Development</p>
+              </a>
+            </div>
+            <div>
+              <a href="https://certificate.codingninjas.com/view/4adfdd37bcc2d552">
+                <img src={genAi} alt="img" />
+                <p>Generative AI</p>
+              </a>
+            </div>
+            <div>
+              <a href="https://drive.google.com/file/d/1o7jbr9I61J2AZDOEaZQdtaX2-jLmU8a3/view">
+                <img src={reactjs} alt="img" />
+                <p>ReactJs</p>
+              </a>
+            </div>
+            <div>
+              <a href="https://github.com/ShabanIrshad/JavaScript-Alogorithm-and-Data-Structure-Certificateion-freeCodeCamp-/blob/main/FreeCodeCampCertificate.jpg">
+                <img src={dsfree} alt="img" />
+                <p>Data Structures in JS</p>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.diginique.com/wp-content/uploads/DT24070066.png">
+                <img src={fullStack} alt="img" />
+                <p>Full Stack Development</p>
+              </a>
+            </div>
+            <div>
+              <a href="https://certificate.codingninjas.com/view/7b5d36cb5ee547e9">
+                <img src={dsjava} alt="img" />
+                <p>Data Structures in Java</p>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.hackerrank.com/certificates/iframe/995f8aa84822">
+                <img src={javaBasic} alt="img" />
+                <p>Java Basic</p>
+              </a>
+            </div>
+            <div>
+              <a href="https://drive.google.com/file/d/1aADrMNBKOhrWNhMt-eaiRDnv0gYzxeTa/view">
+                <img src={sqlData} alt="img" />
+                <p>SQl Data Analytics</p>
+              </a>
+            </div>
+            <div>
+              <a href="https://drive.google.com/file/d/1zF_R0itfh58y6uO0EWiQmPc_dCR509fZ/view">
+                <img src={ninjaSlayground} alt="img" />
+                <p>Ninja Slayground2.0</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" className={homeStyle.about}>
+        <h2 className={homeStyle.heading}>Get in Touch</h2>
+        <p className={homeStyle.skillQuote}>
+          Feel free to reach out if you're looking for a developer, have a question, or just want to connect.
+        </p>
+        <hr className={homeStyle.horizontalLine}></hr>
+        <div className={homeStyle.contactContainer}>
+          <div className={homeStyle.leftContact}>
+              <form>
+                <label htmlFor="name">Name</label><br/>
+                <input type="text" id="name" placeholder="Enter Name Here.." /><br/>
+                 <label htmlFor="name">Name</label><br/>
+                <input type="text" id="name" placeholder="Enter Name Here.." /><br/>
+                 <label htmlFor="name">Name</label><br/>
+                <input type="text" id="name" placeholder="Enter Name Here.." /><br/>
+                <input type="submit" value='Send Message'/>
+              </form>
+          </div>
+          <div className={homeStyle.rightContact}>
+              <h3>Contact Information</h3>
+          </div>
         </div>
       </section>
     </>
