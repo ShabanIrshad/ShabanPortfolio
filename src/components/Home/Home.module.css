@@ -576,12 +576,14 @@
   width: 30px;
   height: 30px;
 }
+
 .rightContact>ul>li{
   list-style-type: none;
   display: flex;
   align-items: center;
   justify-content: start;
-  margin: 10px;
+  /* margin:10px 0px; */
+  margin-left: -40px;
   border: 1px solid pink;
 }
 .rightContact>ul>li>a{
@@ -675,7 +677,16 @@ transition: transform 0.3s ease-in-out;
     width: 100%;
   }
   .contactContainer{
-  display:flex;
-  flex-direction: column-reverse;
-}
+    display:flex;
+    flex-direction: column-reverse;
+  }
+  .rightContact{
+    width: 90%;
+    font-size: 0.6rem;
+  }
+  .leftContact{
+    width: 90%;
+    
+    
+  }
 }
