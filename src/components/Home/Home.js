@@ -6,8 +6,10 @@ import html from "../../Assets/html.png";
 import js from "../../Assets/js.png";
 import react from "../../Assets/react.png";
 import node from "../../Assets/nodejs.png";
+import linked from "../../Assets/linked.png";
 import tailwind from "../../Assets/tailwind.png";
 import mongo from "../../Assets/mongodb.svg";
+import insta from "../../Assets/instagram.png";
 import bootstrap from "../../Assets/bootstrap.jpg";
 import git from "../../Assets/gi.png";
 import firebase from "../../Assets/fire.png";
@@ -18,6 +20,7 @@ import img2 from "../../Assets/img2.png";
 import img3 from "../../Assets/img3.png";
 import img4 from "../../Assets/img4.png";
 import link from "../../Assets/link.png";
+import emailPic from "../../Assets/email.png";
 import webDev from "../../Assets/webDevelopment.jpg";
 import genAi from "../../Assets/generativeAI.jpg";
 import sql from "../../Assets/sql.png";
@@ -662,15 +665,21 @@ const Home = () => {
               <form>
                 <label htmlFor="name">Name</label><br/>
                 <input type="text" id="name" placeholder="Enter Name Here.." /><br/>
-                 <label htmlFor="name">Name</label><br/>
-                <input type="text" id="name" placeholder="Enter Name Here.." /><br/>
-                 <label htmlFor="name">Name</label><br/>
-                <input type="text" id="name" placeholder="Enter Name Here.." /><br/>
-                <input type="submit" value='Send Message'/>
+                 <label htmlFor="email">Email</label><br/>
+                <input type="text" id="email" placeholder="Enter Email Here.." /><br/>
+                 <label htmlFor="message">Message</label><br/>
+                <textarea type="text" id="message" placeholder="Enter Your Message Here.."></textarea><br/>
+                <button>Send Message</button>
               </form>
           </div>
           <div className={homeStyle.rightContact}>
               <h3>Contact Information</h3>
+              <ul>
+                <li><a href="mailto:shabanirshad408@gmail.com"><img src={emailPic} alt="cont_email" /><span>shabanirshad408@gmail.com</span></a></li>
+                <li><a href="https://github.com/ShabanIrshad"><img src={git} alt="cont_email" /><span>Github Profile</span></a></li>
+                <li><a href="https://www.linkedin.com/in/mohd-shaban-ab2417146/"><img src={linked} alt="cont_email" /><span>LinkedIn Profile</span></a></li>
+                <li><a href="https://www.instagram.com/_shaban_irshad/"><img src={insta} alt="cont_email" /><span>Instagram Handle</span></a></li>
+              </ul>
           </div>
         </div>
       </section>
