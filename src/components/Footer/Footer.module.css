@@ -1,0 +1,22 @@
+.container{
+    width:100%;
+    padding-top:50px;
+}
+.container>div>span>a>img{
+    width: 25px;
+    height: 25px;
+}
+.container>div{
+    text-align: center;
+}
+.container>div>span{
+    padding: 10px;
+}
+hr{
+    width: 40%;
+}
+.container>div>span>a:hover{
+    border-bottom: 5px solid #8758ff;
+    transition: all 0.3s ease-in-out;
+}
+

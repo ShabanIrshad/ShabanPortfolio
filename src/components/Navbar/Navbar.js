@@ -21,24 +21,8 @@ const Navbar = () => {
                 Home
               </Link>
             </li>
-            <li>
-              <Link
-                to="/about"
-                className={active === "about" ? navStyle.activeLink : ""}
-                onClick={() => setActive("about")}
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/skills"
-                className={active === "skills" ? navStyle.activeLink : ""}
-                onClick={() => setActive("skills")}
-              >
-                Skills
-              </Link>
-            </li>
+           
+           
             <li>
               <Link
                 to="/projects"
@@ -50,7 +34,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to="/contact"
+                to="#contact"
                 className={active === "contact" ? navStyle.activeLink : ""}
                 onClick={() => setActive("contact")}
               >

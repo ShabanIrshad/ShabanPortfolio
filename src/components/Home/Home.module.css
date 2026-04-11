@@ -345,9 +345,8 @@
 .projectContainer:nth-child(odd) {
   flex-direction: row-reverse;
 }
-.tech::-webkit-scrollbar{
+.tech::-webkit-scrollbar {
   visibility: hidden;
-  
 }
 .desc {
   border: 1px solid #e5e7eb;
@@ -441,11 +440,10 @@
   gap: 1em;
   cursor: pointer;
 }
-.carousel::-webkit-scrollbar{
+.carousel::-webkit-scrollbar {
   visibility: hidden;
-  
 }
-.group1{
+.group1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -453,38 +451,36 @@
   margin-right: -10px;
   padding-right: 1em;
   animation: scroll 15s infinite linear;
-  
 }
-.group1>div>a>img{
-  width:250px;
-  height:200px;
+.group1 > div > a > img {
+  width: 250px;
+  height: 200px;
 }
-.group1>div>a{
+.group1 > div > a {
   text-decoration: none;
   /* border: 1px solid red; */
   color: black;
   text-align: center;
-  font-weight: 600;  
+  font-weight: 600;
   margin: 0;
   padding: 0;
 }
-.group1>div>a>p{
-    margin-top: 0px;
+.group1 > div > a > p {
+  margin-top: 0px;
 }
-.carousel:hover .group1{
+.carousel:hover .group1 {
   animation-play-state: paused;
 }
-.group1>div{
+.group1 > div {
   flex: 0 0 5em;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
 }
-.group1>div:hover{
-  background: linear-gradient(45deg, white,#8758ff);
+.group1 > div:hover {
+  background: linear-gradient(45deg, white, #8758ff);
   transform: scale3d(-10px);
 }
-
 
 /* KEY PART ANIMATION*/
 @keyframes scroll {
@@ -498,36 +494,32 @@
 /* -------------------ACHEIVEMENTS SECTION CSS ENDS HERE--------------------- */
 
 /* -------------------CONTACT SECTION CSS STARTS HERE--------------------- */
-.contactContainer{
-  border: 1px solid red;
+.contactContainer {
   padding: 10px;
   width: 80%;
   margin: auto;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.leftContact{
+.leftContact {
   width: 40%;
-  border: 1px solid yellow;
   padding: 10px;
-  
+
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  
 }
-.leftContact>form{
-  border: 1px solid red;
+.leftContact > form {
   padding: 10px;
 }
-.leftContact>form>label{
+.leftContact > form > label {
   font-weight: 600;
   margin: 10px 5px;
 }
-.leftContact>form>textarea{
+.leftContact > form > textarea {
   font-weight: 400;
   margin: 10px 5px;
-  width: 90%;  
+  width: 90%;
   font-size: 16px;
   height: 100px;
   resize: none;
@@ -536,9 +528,8 @@
   border: none;
   border: 2px solid #8758ff;
   border-radius: 10px;
-  
 }
-.leftContact>form>button{
+.leftContact > form > button {
   width: 100%;
   margin: auto;
   padding: 8px;
@@ -548,13 +539,12 @@
   border: none;
   transition: all 0.3s ease-in-out;
 }
-.leftContact>form>button:hover{
+.leftContact > form > button:hover {
   color: white;
   background-color: #8758ff;
   font-weight: 700;
-  
 }
-.leftContact>form>input{
+.leftContact > form > input {
   font-weight: 400;
   margin: 5px;
   width: 90%;
@@ -565,46 +555,41 @@
   border: 2px solid #8758ff;
   border-radius: 10px;
 }
-.rightContact{
+.rightContact {
   width: 40%;
-  border: 1px solid green;
   padding: 10px;
   margin: 10px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
-.rightContact>ul>li>a>img{
+.rightContact > ul > li > a > img {
   width: 30px;
   height: 30px;
 }
 
-.rightContact>ul>li{
+.rightContact > ul > li {
   list-style-type: none;
   display: flex;
   align-items: center;
   justify-content: start;
-  /* margin:10px 0px; */
   margin-left: -40px;
-  border: 1px solid pink;
 }
-.rightContact>ul>li>a{
+.rightContact > ul > li > a {
   text-decoration: none;
   color: #181818;
 }
-.rightContact>ul>li>a:hover{
+.rightContact > ul > li > a:hover {
   transform: translateX(15%);
-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   color: #8758ff;
   font-weight: 700;
 }
-.rightContact>ul>li>a>span{
+.rightContact > ul > li > a > span {
   position: relative;
   bottom: 10px;
   margin-left: 10px;
-  border: 1px solid gray;
 }
 
 /* -------------------CONTACT SECTION CSS ENDS HERE--------------------- */
-
 
 /* DESKTOP BREAKPOINT */
 
@@ -676,17 +661,15 @@ transition: transform 0.3s ease-in-out;
   .rightProjectContainer {
     width: 100%;
   }
-  .contactContainer{
-    display:flex;
+  .contactContainer {
+    display: flex;
     flex-direction: column-reverse;
   }
-  .rightContact{
+  .rightContact {
     width: 90%;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
-  .leftContact{
+  .leftContact {
     width: 90%;
-    
-    
   }
 }

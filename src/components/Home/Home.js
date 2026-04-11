@@ -654,7 +654,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id="about" className={homeStyle.about}>
+      <section id="contact" className={homeStyle.about}>
         <h2 className={homeStyle.heading}>Get in Touch</h2>
         <p className={homeStyle.skillQuote}>
           Feel free to reach out if you're looking for a developer, have a question, or just want to connect.
