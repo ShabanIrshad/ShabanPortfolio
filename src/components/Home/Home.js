@@ -32,6 +32,7 @@ import dsjava from "../../Assets/dsjava.jpg";
 import javaBasic from "../../Assets/javaBasic.png";
 import sqlData from "../../Assets/sqlData.png";
 import ninjaSlayground from "../../Assets/ninjaSlayground.png";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -532,6 +533,13 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <div className={homeStyle.moreDiv}>
+          <Link to='/projects'>
+          <button>
+            See More Projects
+          </button>
+          </Link>
+        </div>
       </section>
       <section id="about" className={homeStyle.about}>
         <h2 className={homeStyle.heading}>Achievements</h2>
@@ -675,10 +683,10 @@ const Home = () => {
           <div className={homeStyle.rightContact}>
               <h3>Contact Information</h3>
               <ul>
-                <li><a href="mailto:shabanirshad408@gmail.com"><img src={emailPic} alt="cont_email" /><span>shabanirshad408@gmail.com</span></a></li>
-                <li><a href="https://github.com/ShabanIrshad"><img src={git} alt="cont_email" /><span>Github Profile</span></a></li>
-                <li><a href="https://www.linkedin.com/in/mohd-shaban-ab2417146/"><img src={linked} alt="cont_email" /><span>LinkedIn Profile</span></a></li>
-                <li><a href="https://www.instagram.com/_shaban_irshad/"><img src={insta} alt="cont_email" /><span>Instagram Handle</span></a></li>
+                <li><a href="mailto:shabanirshad408@gmail.com" ><img src={emailPic} alt="cont_email" /><span>shabanirshad408@gmail.com</span></a></li>
+                <li><a href="https://github.com/ShabanIrshad" target="blank"><img src={git} alt="cont_email" /><span>Github Profile</span></a></li>
+                <li><a href="https://www.linkedin.com/in/mohd-shaban-ab2417146/" target="blank"><img src={linked} alt="cont_email" /><span>LinkedIn Profile</span></a></li>
+                <li><a href="https://www.instagram.com/_shaban_irshad/" target="blank"><img src={insta} alt="cont_email" /><span>Instagram Handle</span></a></li>
               </ul>
           </div>
         </div>
